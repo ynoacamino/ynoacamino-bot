@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./data.db"
+}
+
+model Query {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  status    String
+
+  // messages  Message[]
+}
+
+// model Message {
+//   id        Int      @id @default(autoincrement())
+//   createdAt DateTime @default(now())
+//   queryId   Int
+//   mailAddressId Int
+
+//   mailAddress MailAddress @relation(fields: [mailAddressId], references: [id])
+//   query     Query    @relation(fields: [queryId], references: [id])
+// }
+
+// model MailAddress {
+//   id        Int      @id @default(autoincrement())
+//   createdAt DateTime @default(now())
+//   address   String  @unique()
+//   active    Boolean @default(true)
+
+//   messages  Message[]
+// }
