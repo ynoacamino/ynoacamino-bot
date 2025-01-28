@@ -13,7 +13,7 @@ Este repositorio contiene el código fuente del bot de Discord **ynoacamino-bot*
 
 ## 🌐 Demo
 
-Puedes probar la version en desplegada en mi servidor [aquí](https://inveztiga.ynoacamino.site/).
+Puedes probar la version en desplegada en mi servidor [aquí](https://bot.ynoacamino.site/).
 
 ## 📚 Recursos que se utilizaron
   * **NestJS:** Framework de Node.js para construir aplicaciones de servidor escalables y eficientes.
